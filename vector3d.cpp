@@ -9,15 +9,15 @@ Vector3d::Vector3d()
 Vector3d::Vector3d(double x, double y, double z)
 	: m_x(x), m_y(y), m_z(z) {}
 
-const double Vector3d::getX() const {
+double Vector3d::getX() const {
 	return m_x;
 }
 
-const double Vector3d::getY() const {
+double Vector3d::getY() const {
 	return m_y;
 }
 
-const double Vector3d::getZ() const {
+double Vector3d::getZ() const {
 	return m_z;
 }
 

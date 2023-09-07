@@ -14,20 +14,20 @@ Ellipse::Ellipse(const double& radiusX, const double& radiusY) {
 	}
 }
 
-const Vector3d Ellipse::getDerivative(const double& t) const {
+Vector3d Ellipse::getDerivative(const double& t) const {
 	return Vector3d(-m_radiusX * sin(t), m_radiusY * cos(t), 0);
 }
 
-const Vector3d Ellipse::getPoint(const double& t) const {
+Vector3d Ellipse::getPoint(const double& t) const {
 	return Vector3d(m_radiusX * cos(t), m_radiusY * sin(t), 0);
 }
 
-const double Ellipse::getRadiusX() const
+double Ellipse::getRadiusX() const
 {
 	return m_radiusX;
 }
 
-const double Ellipse::getRadiusY() const
+double Ellipse::getRadiusY() const
 {
 	return m_radiusY;
 }

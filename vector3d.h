@@ -12,9 +12,9 @@ namespace curves {
 		~Vector3d() = default;
 
 		Vector3d(double x, double y, double z);
-		const double getX() const;
-		const double getY() const;
-		const double getZ() const;
+		double getX() const;
+		double getY() const;
+		double getZ() const;
 		void setX(double x);
 		void setY(double y);
 		void setZ(double z);

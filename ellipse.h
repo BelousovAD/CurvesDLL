@@ -9,10 +9,10 @@ namespace curves {
 			const double& radiusY);
 		~Ellipse() = default;
 
-		const Vector3d getDerivative(const double& t) const override;
-		const Vector3d getPoint(const double& t) const override;
-		const double getRadiusX() const;
-		const double getRadiusY() const;
+		Vector3d getDerivative(const double& t) const override;
+		Vector3d getPoint(const double& t) const override;
+		double getRadiusX() const;
+		double getRadiusY() const;
 
 	private:
 		double m_radiusX;

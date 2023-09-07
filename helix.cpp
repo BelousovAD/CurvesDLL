@@ -15,21 +15,21 @@ Helix::Helix(const double& radius, const double& step)
 	}
 }
 
-const Vector3d Helix::getDerivative(const double& t) const {
+Vector3d Helix::getDerivative(const double& t) const {
 	return Vector3d(-m_radius * sin(t), m_radius * cos(t), m_step / (2 * M_PI));
 }
 
-const Vector3d Helix::getPoint(const double& t) const
+Vector3d Helix::getPoint(const double& t) const
 {
 	return Vector3d(m_radius * cos(t), m_radius * sin(t), t * m_step / (2 * M_PI));
 }
 
-const double Helix::getRadius() const
+double Helix::getRadius() const
 {
 	return m_radius;
 }
 
-const double Helix::getStep() const
+double Helix::getStep() const
 {
 	return m_step;
 }

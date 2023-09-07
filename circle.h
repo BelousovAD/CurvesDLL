@@ -8,9 +8,9 @@ namespace curves {
 		Circle(const double& radius);
 		~Circle() = default;
 
-		const Vector3d getDerivative(const double& t) const override;
-		const Vector3d getPoint(const double& t) const override;
-		const double getRadius() const;
+		Vector3d getDerivative(const double& t) const override;
+		Vector3d getPoint(const double& t) const override;
+		double getRadius() const;
 
 	private:
 		double m_radius;
